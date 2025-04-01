@@ -1054,4 +1054,27 @@ textarea.form-control {
   .about:hover .profile-photo-container img {
     opacity: 1;
   }
- 
+ /* Location map styling */
+.location-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.location-map {
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.location-map iframe {
+    display: block;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .location-map {
+        width: 100%;
+    }
+}
