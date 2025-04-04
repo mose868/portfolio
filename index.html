@@ -22,6 +22,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#cv">CV</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -78,7 +79,7 @@
                         <li>Python, C (for gaming), JavaScript expertise</li>
                         <li>Strong understanding of backend development, AI, and automation</li>
                         <li>Currently developing a telemedicine solution for Africa</li>
-                    </ul>
+                    </ul>y
                 
                     <h4>Digital Marketing & Branding</h4>
                     <ul>
@@ -244,11 +245,11 @@
                 </div>
                 
                 <div class="skill-category fade-in">
-                    <h3>Software & Development</h3>
+                    <h3>LANGUAGES</h3>
                     
                     <div class="skill-bar">
                         <div class="skill-name">
-                            <span>Software Engineering</span>
+                            <span>JavaScript</span>
                             <span>90%</span>
                         </div>
                         <div class="skill-progress">
@@ -258,7 +259,7 @@
                     
                     <div class="skill-bar">
                         <div class="skill-name">
-                            <span>Web Development</span>
+                            <span>Html</span>
                             <span>85%</span>
                         </div>
                         <div class="skill-progress">
@@ -278,13 +279,35 @@
                     
                     <div class="skill-bar">
                         <div class="skill-name">
-                            <span>Computer Science</span>
-                            <span>88%</span>
+                            <span>c</span>
+                            <span>50%</span>
                         </div>
                         <div class="skill-progress">
                             <div style="width: 88%;"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv">
+        <div class="container">
+            <h2 class="section-title fade-in">My CV</h2>
+            
+            <div class="flex-container">
+                <div class="cv-content fade-in">
+                    <p>Download my curriculum vitae to learn more about my professional experience, educational background, and skills.</p>
+                    
+                    <div class="cv-preview">
+                        <img src="images/download.png" alt="CV Preview">
+                    </div>
+                    
+                    <a href="Moses_Kimani_CV.pdf" class="btn cv-btn" download>
+                        <span class="cv-btn-icon">📄</span>
+                        Download CV
+                    </a>
                 </div>
             </div>
         </div>
@@ -456,6 +479,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#cv">CV</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -480,17 +504,10 @@
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top" id="backToTop">↑</a>
 
-    <!-- JavaScript for Dark Mode Toggle -->
+    <!-- JavaScript for Dark Mode Toggle only -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const darkModeToggle = document.getElementById('dark-mode-checkbox');
-            
-            // Check for saved user preference
-            if (localStorage.getItem('darkMode')) {
-
-                document.body.classList.add('dark-mode');
-                darkModeToggle.checked = true;
-            }
             
             // Toggle dark mode
             darkModeToggle.addEventListener('change', function() {
@@ -501,15 +518,6 @@
                     document.body.classList.remove('dark-mode');
                     localStorage.removeItem('darkMode');
                 }
-            });
-            
-            // Mobile menu toggle
-            const navToggle = document.getElementById('navToggle');
-            const navbar = document.getElementById('navbar');
-            
-            navToggle.addEventListener('click', function() {
-                const isOpen = navbar.style.maxHeight === '300px' || navbar.style.maxHeight === '';
-                navbar.style.maxHeight = isOpen ? '0' : '300px';
             });
         });
     </script>

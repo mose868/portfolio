@@ -1110,3 +1110,81 @@ footer {
 
     }
 }
+/* CV Section Styles */
+.cv {
+    padding: 80px 0;
+    background-color: var(--bg-alt);
+}
+
+.cv-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cv-content p {
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.cv-preview {
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv-preview:hover {
+    transform: translateY(-5px);
+}
+
+.cv-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cv-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.cv-btn-icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Dark mode adjustments */
+.dark-mode .cv {
+    background-color: var(--bg-dark-alt);
+}
+
+.dark-mode .cv-preview {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cv-preview {
+        max-width: 250px;
+    }
+}
